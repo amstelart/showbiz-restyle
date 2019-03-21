@@ -1,0 +1,32 @@
+// В этом файле должны быть стили для БЭМ-блока project-more-loader, его элементов,
+// модификаторов, псевдоселекторов, псевдоэлементов, @media-условий...
+// Очередность: http://nicothin.github.io/idiomatic-pre-CSS/#priority
+
+.project-more-loader {
+
+  $block-name:                &; // #{$block-name}__element
+
+  background: #e0dee2;
+  border: none;
+  width: 100%;
+  font-size: 18px;
+  font-weight: 700;
+  padding: 1.2em 0.7em;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  &:before {
+    content: "";
+    width: 16px;
+    height: 19px;
+    background-image: svg-load('../blocks/project-more-loader/bg-img/icon-loader.svg');
+    background-repeat: no-repeat;
+    margin-right: 10px;
+  }
+
+  &:hover,
+  &:focus {
+    background: lighten(#e0dee2, 5%);
+  }
+}

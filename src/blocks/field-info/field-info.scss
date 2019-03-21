@@ -1,0 +1,13 @@
+// В этом файле должны быть стили для БЭМ-блока field-info, его элементов,
+// модификаторов, псевдоселекторов, псевдоэлементов, @media-условий...
+// Очередность: http://nicothin.github.io/idiomatic-pre-CSS/#priority
+
+.field-info {
+
+  $block-name:                &; // #{$block-name}__element
+
+  color: #575757;
+  font-weight: 300;
+  font-size: 18px;
+
+}

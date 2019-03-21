@@ -1,0 +1,28 @@
+// В этом файле должны быть стили для БЭМ-блока project-page, его элементов,
+// модификаторов, псевдоселекторов, псевдоэлементов, @media-условий...
+// Очередность: http://nicothin.github.io/idiomatic-pre-CSS/#priority
+
+$container-xxl:               1400px;
+
+.project-page {
+
+  $block-name:                &; // #{$block-name}__element
+
+  padding-bottom: 40px;
+
+  &__inner {
+    @include container;
+  }
+
+  &__title {
+    display: flex;
+    justify-content: space-between;
+    align-items: baseline;
+  }
+
+  .project-card__labels {
+    font-size: 18px;
+    font-weight: 300;
+  }
+
+}

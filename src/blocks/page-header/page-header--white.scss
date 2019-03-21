@@ -1,0 +1,27 @@
+.page-header {
+
+  $block-name:                &; // #{$block-name}__element
+
+  &--white {
+    padding: 15px 0;
+    background: #fff;
+    border-bottom: 1px solid #e3e3e3;
+
+    .burger > span {
+      background: #000;
+
+      &:before,
+      &:after {
+        background: #000;
+      }
+    }
+
+    .burger--close > span {
+
+      &:before,
+      &:after {
+        background: #fff;
+      }
+    }
+  }
+}

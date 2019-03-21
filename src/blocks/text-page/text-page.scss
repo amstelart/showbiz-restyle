@@ -1,0 +1,19 @@
+// В этом файле должны быть стили для БЭМ-блока text-page, его элементов,
+// модификаторов, псевдоселекторов, псевдоэлементов, @media-условий...
+// Очередность: http://nicothin.github.io/idiomatic-pre-CSS/#priority
+
+.text-page {
+
+  $block-name:                &; // #{$block-name}__element
+
+  padding-top: 0;
+
+  &__wrap {
+    // @include container;
+  }
+
+  &__title {
+    font-weight: 700;
+  }
+
+}

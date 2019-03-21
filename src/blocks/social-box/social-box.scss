@@ -1,0 +1,81 @@
+// В этом файле должны быть стили для БЭМ-блока social-box, его элементов,
+// модификаторов, псевдоселекторов, псевдоэлементов, @media-условий...
+// Очередность: http://nicothin.github.io/idiomatic-pre-CSS/#priority
+
+.social-box {
+
+  $block-name:                &; // #{$block-name}__element
+
+  &__list {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+  }
+
+  &__item {
+    display: inline-block;
+    margin: 0 10px;
+
+    &:first-child {
+      margin-left: 0;
+    }
+
+    &:last-child {
+      margin-right: 0;
+    }
+
+    @media (max-width: ($screen-sm - 1)) {
+      margin: 0 15px;
+    }
+  }
+
+  &__link {
+    display: block;
+    padding: 2px;
+    line-height: 1;
+
+    &:hover,
+    &:focus {
+
+      #{$block-name}__icon {
+        fill: #e93749;
+      }
+    }
+  }
+
+  &__icon {
+    fill: #d7d7d7;
+    width: 30px;
+    height: 30px;
+
+    // @media (max-width: ($screen-sm - 1)) {
+    //   width: 40px;
+    //   height: 40px;
+    // }
+  }
+
+  &--intro {
+
+    flex-shrink: 0;
+
+    #{$block-name}__icon {
+      fill: #6b90ce;
+      width: 26px;
+      height: 26px;
+    }
+
+    #{$block-name}__link {
+      display: block;
+      padding: 2px;
+      line-height: 1;
+
+      &:hover,
+      &:focus {
+
+        #{$block-name}__icon {
+          fill: #fff;
+        }
+      }
+    }
+  }
+}
