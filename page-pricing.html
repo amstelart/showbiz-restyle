@@ -1,0 +1,475 @@
+<!DOCTYPE html>
+<html class="no-js  page" lang="ru">
+
+<head>
+  <meta charset="utf-8">
+  <title>SHOWBIZ</title>
+  <meta name="description" content="">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="format-detection" content="telephone=no">
+
+  <!-- <link rel="icon" type="image/png" sizes="32x32" href="img/favicon-32x32.png"> -->
+  <!-- <link rel="icon" type="image/png" sizes="16x16" href="img/favicon-16x16.png"> -->
+  <link rel="shortcut icon" href="img/favicon.ico">
+  <link href="https://fonts.googleapis.com/css?family=Ubuntu:300,400,500,700&amp;subset=cyrillic" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Montserrat:300,400,500,600,700,800&amp;subset=cyrillic,cyrillic-ext" rel="stylesheet">
+  <link href="css/style.min.css" rel="stylesheet" media="screen">
+
+  <script>
+    // Маркер работающего javascript
+    document.documentElement.className = document.documentElement.className.replace('no-js', 'js');
+    document.addEventListener('DOMContentLoaded', function(){
+      if (window.isMobile !== undefined) {
+        // console.log(isMobile);
+        if(isMobile.any) {
+          var rootClasses = ' is-mobile';
+          for (key in isMobile) {
+            if(typeof isMobile[key] === 'boolean' && isMobile[key] && key !== 'any') rootClasses += ' is-mobile--'+key;
+            if(typeof isMobile[key] === 'object' && key !== 'other') {
+              for (type in isMobile[key]) {
+                if(isMobile[key][type]) rootClasses += ' is-mobile--'+key+'-'+type;
+              }
+            }
+          }
+          document.documentElement.className += rootClasses;
+        }
+      }
+      else {
+        console.log('Классы для мобильных не добавлены: в сборке отсутствует isMobile.js');
+      }
+    });
+
+  </script>
+
+</head>
+
+<body>
+
+  <div class="page__inner">
+
+    <div class="page__content pricing">
+
+      <header class="page-header page-header--white" role="banner">
+
+        <div class="page-header__inner">
+
+          <div class="page-header__flex">
+            <a href="index.html" class="logo">
+              <img src="img/logo--black.svg" width="175px" height="45px" alt="logo">
+            </a>
+
+            <button id="main-nav-toggler" class="main-nav__toggler  burger"><span></span></button>
+
+            <nav id="main-nav" class="main-nav main-nav--dark" role="navigation">
+              <ul class="main-nav__list">
+                <li class="main-nav__item  main-nav__item--active">
+                  <a href="page-text.html" class="main-nav__link">
+                    Портфолио
+                  </a>
+                </li>
+                <li class="main-nav__item">
+                  <a href="page-text.html" class="main-nav__link">
+                    Разработка сайтов
+                  </a>
+                </li>
+                <li class="main-nav__item">
+                  <a href="page-text.html" class="main-nav__link">
+                    Продвижение
+                  </a>
+                </li>
+                <li class="main-nav__item">
+                  <a href="page-text.html" class="main-nav__link">
+                    Поддержка
+                  </a>
+                </li>
+                <li class="main-nav__item">
+                  <a href="page-text.html" class="main-nav__link">
+                    Партнерам
+                  </a>
+                </li>
+                <li class="main-nav__item">
+                  <a href="#to-bottom" class="main-nav__link js-scroll-to">
+                    Контакты
+                  </a>
+                </li>
+              </ul>
+            </nav>
+          </div>
+
+
+        </div>
+
+
+      </header>
+
+
+      <main class="pricing__box" role="main">
+        <div class="pricing__header">
+          <h1 class="pricing__title">Сравните тарифные планы на поддержку и доработку</h1>
+        </div>
+        <div class="pricing__table-wrap">
+          <div class="table-mobile-scroll">
+            <table class="table pricing__table fixtable">
+              <tbody>
+                <tr>
+                  <th class="pricing__theader">Тарифы</th>
+                  <th class="pricing__theader">
+                    <span class="pricing__theader-title">Минимальный</span>
+                    <span class="pricing__theader-cost">2400 <span>руб/мес</span></span>
+                  </th>
+                  <th class="pricing__theader">
+                    <span class="pricing__theader-title">Начальный</span>
+                    <span class="pricing__theader-cost">5500 <span>руб/мес</span></span>
+                  </th>
+                  <th class="pricing__theader pricing__theader--star">
+                    <span class="pricing__theader-title">Оптимальный</span>
+                    <span class="pricing__theader-cost">7000 <span>руб/мес</span></span>
+                  </th>
+                  <th class="pricing__theader">
+                    <span class="pricing__theader-title">Максимальный</span>
+                    <span class="pricing__theader-cost">11800 <span>руб/мес</span></span>
+                  </th>
+                </tr>
+                <tr>
+                  <td class="pricing__part-title" colspan="5"><b>Поддержка</b></td>
+                </tr>
+                <tr>
+                  <td class="pricing__part-name">Резервное копирование</td>
+                  <td>1 копия/мес</td>
+                  <td>1 копия/мес</td>
+                  <td>2 копия/мес</td>
+                  <td>4 копия/мес</td>
+                </tr>
+                <tr>
+                  <td class="pricing__part-name">Диагностика наличия вирусов</td>
+                  <td>
+                    <svg class="pricing__part-check">
+                      <use xlink:href="img/sprite-svg.svg#check-icon"></use>
+                    </svg>
+                  </td>
+                  <td>
+                    <svg class="pricing__part-check">
+                      <use xlink:href="img/sprite-svg.svg#check-icon"></use>
+                    </svg>
+                  </td>
+                  <td>
+                    <svg class="pricing__part-check">
+                      <use xlink:href="img/sprite-svg.svg#check-icon"></use>
+                    </svg>
+                  </td>
+                  <td>
+                    <svg class="pricing__part-check">
+                      <use xlink:href="img/sprite-svg.svg#check-icon"></use>
+                    </svg>
+                  </td>
+                </tr>
+                <tr>
+                  <td class="pricing__part-name">Удаление вирусов</td>
+                  <td>
+                    <svg class="pricing__part-check">
+                      <use xlink:href="img/sprite-svg.svg#check-icon"></use>
+                    </svg>
+                  </td>
+                  <td>
+                    <svg class="pricing__part-check">
+                      <use xlink:href="img/sprite-svg.svg#check-icon"></use>
+                    </svg>
+                  </td>
+                  <td>
+                    <svg class="pricing__part-check">
+                      <use xlink:href="img/sprite-svg.svg#check-icon"></use>
+                    </svg>
+                  </td>
+                  <td>
+                    <svg class="pricing__part-check">
+                      <use xlink:href="img/sprite-svg.svg#check-icon"></use>
+                    </svg>
+                  </td>
+                </tr>
+                <tr>
+                  <td class="pricing__part-name">Контроль срока делегирования домена и оплаты хостинга</td>
+                  <td>
+                    <svg class="pricing__part-check">
+                      <use xlink:href="img/sprite-svg.svg#check-icon"></use>
+                    </svg>
+                  </td>
+                  <td>
+                    <svg class="pricing__part-check">
+                      <use xlink:href="img/sprite-svg.svg#check-icon"></use>
+                    </svg>
+                  </td>
+                  <td>
+                    <svg class="pricing__part-check">
+                      <use xlink:href="img/sprite-svg.svg#check-icon"></use>
+                    </svg>
+                  </td>
+                  <td>
+                    <svg class="pricing__part-check">
+                      <use xlink:href="img/sprite-svg.svg#check-icon"></use>
+                    </svg>
+                  </td>
+                </tr>
+                <tr>
+                  <td class="pricing__part-name">Контакт с хостинг-провайдером</td>
+                  <td>
+                    <svg class="pricing__part-check">
+                      <use xlink:href="img/sprite-svg.svg#check-icon"></use>
+                    </svg>
+                  </td>
+                  <td>
+                    <svg class="pricing__part-check">
+                      <use xlink:href="img/sprite-svg.svg#check-icon"></use>
+                    </svg>
+                  </td>
+                  <td>
+                    <svg class="pricing__part-check">
+                      <use xlink:href="img/sprite-svg.svg#check-icon"></use>
+                    </svg>
+                  </td>
+                  <td>
+                    <svg class="pricing__part-check">
+                      <use xlink:href="img/sprite-svg.svg#check-icon"></use>
+                    </svg>
+                  </td>
+                </tr>
+                <tr>
+                  <td class="pricing__part-name">Размещение текстовой информации</td>
+                  <td><span class="pricing__part-dash">&#8212;</span></td>
+                  <td>До 5 стр (А4, 12 кегль)</td>
+                  <td>До 10 стр (А4, 12 кегль)</td>
+                  <td>До 20 стр (А4, 12 кегль)</td>
+                </tr>
+                <tr>
+                  <td class="pricing__part-name">Размещение и оптимизация графических изображений</td>
+                  <td><span class="pricing__part-dash">&#8212;</span></td>
+                  <td>До 5 шт</td>
+                  <td>До 10 шт</td>
+                  <td>До 20 шт</td>
+                </tr>
+                <tr>
+                  <td class="pricing__part-name">Добавление/изменение разделов</td>
+                  <td><span class="pricing__part-dash">&#8212;</span></td>
+                  <td>Не ограничено</td>
+                  <td>Не ограничено</td>
+                  <td>Не ограничено</td>
+                </tr>
+                <tr>
+                  <td class="pricing__part-title" colspan="5"><b>Доработка</b></td>
+                </tr>
+                <tr>
+                  <td class="pricing__part-name">Функциональные возможности</td>
+                  <td><span class="pricing__part-dash">&#8212;</span></td>
+                  <td>
+                    <svg class="pricing__part-check">
+                      <use xlink:href="img/sprite-svg.svg#check-icon"></use>
+                    </svg>
+                  </td>
+                  <td>
+                    <svg class="pricing__part-check">
+                      <use xlink:href="img/sprite-svg.svg#check-icon"></use>
+                    </svg>
+                  </td>
+                  <td>
+                    <svg class="pricing__part-check">
+                      <use xlink:href="img/sprite-svg.svg#check-icon"></use>
+                    </svg>
+                  </td>
+                </tr>
+                <tr>
+                  <td class="pricing__part-name">Дизайн элементов</td>
+                  <td><span class="pricing__part-dash">&#8212;</span></td>
+                  <td>
+                    <svg class="pricing__part-check">
+                      <use xlink:href="img/sprite-svg.svg#check-icon"></use>
+                    </svg>
+                  </td>
+                  <td>
+                    <svg class="pricing__part-check">
+                      <use xlink:href="img/sprite-svg.svg#check-icon"></use>
+                    </svg>
+                  </td>
+                  <td>
+                    <svg class="pricing__part-check">
+                      <use xlink:href="img/sprite-svg.svg#check-icon"></use>
+                    </svg>
+                  </td>
+                </tr>
+                <tr>
+                  <td class="pricing__part-name">Верстка элементов</td>
+                  <td><span class="pricing__part-dash">&#8212;</span></td>
+                  <td>
+                    <svg class="pricing__part-check">
+                      <use xlink:href="img/sprite-svg.svg#check-icon"></use>
+                    </svg>
+                  </td>
+                  <td>
+                    <svg class="pricing__part-check">
+                      <use xlink:href="img/sprite-svg.svg#check-icon"></use>
+                    </svg>
+                  </td>
+                  <td>
+                    <svg class="pricing__part-check">
+                      <use xlink:href="img/sprite-svg.svg#check-icon"></use>
+                    </svg>
+                  </td>
+                </tr>
+                <tr>
+                  <td class="pricing__part-name">Разработкатка и размещение баннеров</td>
+                  <td><span class="pricing__part-dash">&#8212;</span></td>
+                  <td>
+                    <svg class="pricing__part-check">
+                      <use xlink:href="img/sprite-svg.svg#check-icon"></use>
+                    </svg>
+                  </td>
+                  <td>
+                    <svg class="pricing__part-check">
+                      <use xlink:href="img/sprite-svg.svg#check-icon"></use>
+                    </svg>
+                  </td>
+                  <td>
+                    <svg class="pricing__part-check">
+                      <use xlink:href="img/sprite-svg.svg#check-icon"></use>
+                    </svg>
+                  </td>
+                </tr>
+                <tr>
+                  <td class="pricing__part-name">Консультация менеджера</td>
+                  <td>
+                    <svg class="pricing__part-check">
+                      <use xlink:href="img/sprite-svg.svg#check-icon"></use>
+                    </svg>
+                  </td>
+                  <td>
+                    <svg class="pricing__part-check">
+                      <use xlink:href="img/sprite-svg.svg#check-icon"></use>
+                    </svg>
+                  </td>
+                  <td>
+                    <svg class="pricing__part-check">
+                      <use xlink:href="img/sprite-svg.svg#check-icon"></use>
+                    </svg>
+                  </td>
+                  <td>
+                    <svg class="pricing__part-check">
+                      <use xlink:href="img/sprite-svg.svg#check-icon"></use>
+                    </svg>
+                  </td>
+                </tr>
+                <tr>
+                  <td class="pricing__part-name">Включено рабочих часов </td>
+                  <td>2</td>
+                  <td>5</td>
+                  <td>7</td>
+                  <td>12</td>
+                </tr>
+                <tr>
+                  <td class="pricing__part-name">Стоимость часа специалиста</td>
+                  <td>1200 руб</td>
+                  <td>1100 руб</td>
+                  <td>1000 руб</td>
+                  <td>900 руб</td>
+                </tr>
+                <tr>
+                  <td class="pricing__part-name">Стоимость часа сверх тарифа</td>
+                  <td>1200 руб</td>
+                  <td>1000 руб</td>
+                  <td>900 руб</td>
+                  <td>750 руб</td>
+                </tr>
+                <tr>
+                  <td class="pricing__part-name">Скидка при оплате на 6 месяцев</td>
+                  <td>600 руб</td>
+                  <td>1100 руб</td>
+                  <td>2000 руб</td>
+                  <td>4500 руб</td>
+                </tr>
+                <tr>
+                  <td class="pricing__part-name">Скидка при оплате на 12 месяцев</td>
+                  <td>2000 руб</td>
+                  <td>5000 руб</td>
+                  <td>7000 руб</td>
+                  <td>11800 руб</td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+        </div>
+        <div class="pricing__action">
+          <p>Понравился тариф или появились вопросы? <br>Оставьте заявку и мы свяжемся с вами</p>
+          <a class="btn btn--red-rounded">Оставить заявку</a>
+        </div>
+      </main>
+
+    </div>
+
+    <div class="page__footer-wrapper">
+
+      <footer class="page-footer" role="contentinfo">
+        <div class="page-footer__inner">
+          <div class="page-footer__flex">
+            <div class="page-footer__item">
+              <div class="footer-map">
+                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2470.507384696952!2d36.18970205169849!3d51.74204497957477!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x412f03b924dd1d45%3A0xbe1ae8288fc39080!2z0YPQuy4g0KHQsNC00L7QstCw0Y8sIDUsINCa0YPRgNGB0LosINCa0YPRgNGB0LrQsNGPINC-0LHQuy4sINCg0L7RgdGB0LjRjywgMzA1MDA0!5e0!3m2!1sru!2sus!4v1534495081506" width="100%" height="100%" frameborder="0" style="border:0" allowfullscreen></iframe>
+              </div>
+            </div>
+            <div class="page-footer__item">
+              <div class="footer-contacts">
+                <div class="footer-contacts__inner">
+                  <div class="footer-contacts__item">
+                    <img src="img/logo--mini.svg" alt="" class="footer-contacts__logo">
+                  </div>
+                  <div class="footer-contacts__item">
+                    <div class="social-box">
+                      <ul class="social-box__list">
+                        <li class="social-box__item">
+                          <a href="#" class="social-box__link">
+                            <svg class="social-box__icon">
+                              <use xlink:href="img/sprite-svg.svg#contacts-icon-skype"></use>
+                            </svg>
+                          </a>
+                        </li>
+                        <li class="social-box__item">
+                          <a href="#" class="social-box__link">
+                            <svg class="social-box__icon">
+                              <use xlink:href="img/sprite-svg.svg#contacts-icon-phone"></use>
+                            </svg>
+                          </a>
+                        </li>
+                        <li class="social-box__item">
+                          <a href="#" class="social-box__link">
+                            <svg class="social-box__icon">
+                              <use xlink:href="img/sprite-svg.svg#contacts-icon-email"></use>
+                            </svg>
+                          </a>
+                        </li>
+                      </ul>
+                    </div>
+                  </div>
+                  <div class="footer-contacts__item">
+                    <span class="footer-contacts__phone">8 800 250 21 02</span>
+                  </div>
+                  <div class="footer-contacts__item">
+                    <span class="footer-contacts__text">
+                      <p>Курск, ул. Садовая, 5, офис 415</p>
+                      <p>work@2showbiz.ru</p>
+                    </span>
+                  </div>
+                  <div class="footer-contacts__action">
+                    <a href="#feedback-section" class="btn btn--red-outline js-scroll-to">Оставить заявку</a>
+                    <a href="#" class="btn btn--black-outline">Заполнить бриф</a>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div id="to-bottom"></div>
+      </footer>
+
+    </div>
+
+  </div>
+  <script src="js/script.min.js"></script>
+
+</body>
+</html>
