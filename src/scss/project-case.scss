@@ -46,13 +46,19 @@ $grid-gutter-width:           30px;
     .s1 {
       background-color: #990d3f;
       background: linear-gradient(to bottom, rgb(219,14,88) 0%,rgb(153,13,63) 58%,rgb(153,13,63) 100%);
-      padding-top: 60px;
-      padding-bottom: 30px;
 
-      @media (min-width: $screen-lg) {
-        padding-top: 130px;
-        padding-bottom: 40px;
+      .project-case__cont {
+        position: relative;
+        padding-top: 60px;
+        padding-bottom: 30px;
+
+        @media (min-width: $screen-lg) {
+          padding-top: 130px;
+          padding-bottom: 40px;
+          padding-right: 400px;
+        }
       }
+
 
       &_title {
         color: #fff;
@@ -73,6 +79,17 @@ $grid-gutter-width:           30px;
         b {
           font-weight: 500;
           white-space: nowrap;
+        }
+      }
+
+      .s1-img {
+        position: absolute;
+        bottom: -9px;
+        right: 0;
+        display: none;
+
+        @media (min-width: $screen-lg) {
+          display: block;
         }
       }
     }
