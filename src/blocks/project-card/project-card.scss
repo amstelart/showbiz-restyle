@@ -27,9 +27,17 @@
 
   &__title {
     margin: 0;
-    font-size: 24px;
+    font-size: 18px;
     font-weight: 700;
     color: #000;
+
+    @media (min-width: $screen-md) {
+      font-size: 22;
+    }
+
+    @media (min-width: $screen-xxl) {
+      font-size: 24px;
+    }
   }
 
   &__label {

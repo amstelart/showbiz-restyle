@@ -1,0 +1,126 @@
+// В этом файле должны быть стили для БЭМ-блока brif, его элементов,
+// модификаторов, псевдоселекторов, псевдоэлементов, @media-условий...
+// Очередность: http://nicothin.github.io/idiomatic-pre-CSS/#priority
+
+.brif {
+
+  $block-name:                &; // #{$block-name}__element
+
+  background: #1f212a;
+  padding: 64px 0 100px;
+  min-height: 300px;
+
+  &__inner {
+    max-width: 700px;
+    margin: auto;
+    padding-left: 15px;
+    padding-right: 15px;
+  }
+
+  &__info {
+
+    color: #fff;
+
+    h3 {
+      font-size: 30px;
+      font-weight: 700;
+      margin-bottom: 15px;
+      margin-top: 0;
+    }
+
+    p {
+      font-size: 16px;
+      color: #8d8d90;
+      margin-bottom: 30px;
+      line-height: 1.4;
+    }
+  }
+
+  &__form {
+  }
+
+  &__form-header {
+    background: #eeeeee;
+    border-radius: 4px 4px 0 0;
+    color: #000;
+    padding: 30px 40px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    .step-title {
+      font-size: 18px;
+      font-weight: 700;
+      margin: 0;
+    }
+    .step-count {
+      font-size: 16px;
+      font-weight: 400;
+      margin-left: 15px;
+    }
+  }
+
+  &__form-body {
+    background: #fff;
+    padding: 30px 40px 5px 40px;
+  }
+
+  &__form-footer {
+    background: #fff;
+    border-radius: 0 0 4px 4px;
+    padding: 5px 40px 30px 40px;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-between;
+
+    p {
+      font-size: 14px;
+      color: #707070;
+      flex-grow: 1;
+      margin: 1em 0;
+
+      span {
+        color: #e93749;
+        font-size: 16px;
+      }
+    }
+
+    .btn {
+      flex-grow: 1;
+    }
+  }
+
+  &__action {
+    min-width: 100%;
+  }
+
+  &__action-btn {
+
+    margin-bottom: 15px;
+
+    .btn {
+      min-width: 100%;
+      font-size: 16px;
+    }
+  }
+
+  &__action-bottom {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    a {
+      font-size: 16px;
+      color: #c5c4c4;
+      font-weight: 500;
+      text-decoration: none;
+      margin-right: auto;
+    }
+
+    p {
+      flex-grow: 0;
+    }
+  }
+
+}

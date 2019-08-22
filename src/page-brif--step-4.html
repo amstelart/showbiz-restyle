@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html class="no-js  page" lang="ru">
+
+<head>
+  <meta charset="utf-8">
+  <title>SHOWBIZ</title>
+  <meta name="description" content="">
+  @@include('_include/page_head.html')
+</head>
+
+<body>
+
+  <div class="page__inner">
+
+    <div class="page__content">
+
+      @@include('blocks/page-header/page-header--white.html')
+
+      <main class="brif" role="main">
+        <div class="brif__inner">
+          <div class="brif__info">
+            <h3>Бриф на разработку сайта</h3>
+            <p>От того, насколько качественно вы заполните бриф зависит эффективность разрабатываемого проекта. После заполнения брифа, мы оценим ваш проект</p>
+            <form action="" class="brif__form">
+              <div class="brif__form-header">
+                <h3 class="step-title">Особенности работы компании</h3> <span class="step-count">Шаг 4 из 6</span>
+              </div>
+              <div class="brif__form-body">
+                <label class="brif-field-text">
+                  <span class="brif-field-text__name">Какие убеждающие цифры мы можем использовать.</span>
+                  <span class="brif-field-text__input-wrap">
+                    <textarea class="brif-field-text__input" placeholder="Пример: Ежемесячная экономии на отопление 2000 руб. для дома 200 м²" rows="5"></textarea>
+                  </span>
+                </label>
+                <div class="brif-field-radio">
+                  <div class="brif-field-radio__title">Стоит ли публиковать какие-то лицензии, сертификаты?</div>
+                  <div class="brif-field-radio__input-wrap">
+                    <label class="brif-field-radio__name">
+                      <input class="brif-field-radio__input" type="radio" id="" name="demo-radio" checked>
+                      <span class="brif-field-radio__name-text">Да</span>
+                    </label>
+                  </div>
+                  <div class="brif-field-radio__input-wrap">
+                    <label class="brif-field-radio__name">
+                      <input class="brif-field-radio__input" type="radio" id="" name="demo-radio" checked>
+                      <span class="brif-field-radio__name-text">Нет</span>
+                    </label>
+                  </div>
+                </div>
+                <div class="brif-field-radio">
+                  <div class="brif-field-radio__title">Есть ли возможность получить 2-3 отзыва?</div>
+                  <div class="brif-field-radio__input-wrap">
+                    <label class="brif-field-radio__name">
+                      <input class="brif-field-radio__input" type="radio" id="" name="demo-radio" checked>
+                      <span class="brif-field-radio__name-text">Да</span>
+                    </label>
+                  </div>
+                  <div class="brif-field-radio__input-wrap">
+                    <label class="brif-field-radio__name">
+                      <input class="brif-field-radio__input" type="radio" id="" name="demo-radio" checked>
+                      <span class="brif-field-radio__name-text">Нет</span>
+                    </label>
+                  </div>
+                </div>
+                <label class="brif-field-text">
+                  <span class="brif-field-text__name">Опишите поэтапную схему работы с клиентом</span>
+                  <span class="brif-field-text__input-wrap">
+                    <textarea class="brif-field-text__input" placeholder="Пример: Шаг 1 — получение заявки, Шаг 2 — выезд на объект и т.д." rows="5"></textarea>
+                  </span>
+                </label>
+                <label class="brif-field-text">
+                  <span class="brif-field-text__name">Есть ли какое-то послепродажное сопровождение клиента? Обучение, консультации?</span>
+                  <span class="brif-field-text__input-wrap">
+                    <textarea class="brif-field-text__input" rows="5"></textarea>
+                  </span>
+                </label>
+                <label class="brif-field-text">
+                  <span class="brif-field-text__name">Есть ли уникальное торговое предложение целевому клиенту?</span>
+                  <span class="brif-field-text__input-wrap">
+                    <textarea class="brif-field-text__input" rows="5"></textarea>
+                  </span>
+                </label>
+                <label class="brif-field-text">
+                  <span class="brif-field-text__name">О каких деталях важно упомянуть?</span>
+                  <span class="brif-field-text__input-wrap">
+                    <textarea class="brif-field-text__input" rows="5"></textarea>
+                  </span>
+                </label>
+              </div>
+              <div class="brif__form-footer">
+                <a href="page-brif--step-3.html" class="btn btn--white"><span>Назад</span></a>
+                <a href="page-brif--step-5.html" class="btn btn--red btn-icon">
+                  <span>Далее</span>
+                  <svg class="btn__icon">
+                    <use xlink:href="img/sprite-svg.svg#btn-arrow"></use>
+                  </svg>
+                </a>
+              </div>
+            </form>
+          </div>
+        </div>
+      </main>
+
+    </div>
+
+    <div class="page__footer-wrapper">
+      @@include('blocks/page-footer/page-footer.html')
+    </div>
+
+  </div>
+
+  @@include('_include/page_bottom.html')
+</body>
+</html>

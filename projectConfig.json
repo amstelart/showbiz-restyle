@@ -52,6 +52,7 @@
     "breadcrumbs": [],
     "off-canvas": [],
     "progress": [],
+    "tooltip": [],
     "media": [],
     "modal": [],
     "close": [],
@@ -60,7 +61,6 @@
     "embed-responsive": [],
     "pie-chart": [],
     "fields-group": [],
-    "tooltip": [],
     "intro": [],
     "services-section": [],
     "services": [],
@@ -84,7 +84,12 @@
     "error-page": [],
     "pricing": [],
     "team-card": [],
-    "attainment-section": []
+    "attainment-section": [],
+    "brif": [],
+    "brif-field-text": [],
+    "brif-field-checkbox": [],
+    "field-radio-emoji": [],
+    "brif-field-radio": []
   },
   "addCssBefore": [
     "./src/scss/variables.scss",

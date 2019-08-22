@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html class="no-js  page" lang="ru">
+
+<head>
+  <meta charset="utf-8">
+  <title>SHOWBIZ</title>
+  <meta name="description" content="">
+  @@include('_include/page_head.html')
+</head>
+
+<body>
+
+  <div class="page__inner">
+
+    <div class="page__content">
+
+      @@include('blocks/page-header/page-header--white.html')
+
+      <main class="brif" role="main">
+        <div class="brif__inner">
+          <div class="brif__info">
+            <h3>Бриф на разработку сайта</h3>
+            <p>От того, насколько качественно вы заполните бриф зависит эффективность разрабатываемого проекта. После заполнения брифа, мы оценим ваш проект</p>
+            <form action="" class="brif__form">
+              <div class="brif__form-header">
+                <h3 class="step-title">Конкуренты</h3> <span class="step-count">Шаг 3 из 6</span>
+              </div>
+              <div class="brif__form-body">
+                <label class="brif-field-text">
+                  <span class="brif-field-text__name">Назовите основных конкурентов, приложите ссылки на их сайты</span>
+                  <span class="brif-field-text__input-wrap">
+                    <textarea class="brif-field-text__input" rows="5"></textarea>
+                  </span>
+                </label>
+                <label class="brif-field-text">
+                  <span class="brif-field-text__name">Опишите ваши сильные и слабые стороны в сравнении с конкурентами. Укажите выгоды для клиентов исходя из ваших преимуществ.</span>
+                  <span class="brif-field-text__input-wrap">
+                    <textarea class="brif-field-text__input" rows="5"></textarea>
+                  </span>
+                </label>
+              </div>
+              <div class="brif__form-footer">
+                <a href="page-brif--step-2.html" class="btn btn--white"><span>Назад</span></a>
+                <a href="page-brif--step-4.html" class="btn btn--red btn-icon">
+                  <span>Далее</span>
+                  <svg class="btn__icon">
+                    <use xlink:href="img/sprite-svg.svg#btn-arrow"></use>
+                  </svg>
+                </a>
+              </div>
+            </form>
+          </div>
+        </div>
+      </main>
+
+    </div>
+
+    <div class="page__footer-wrapper">
+      @@include('blocks/page-footer/page-footer.html')
+    </div>
+
+  </div>
+
+  @@include('_include/page_bottom.html')
+</body>
+</html>

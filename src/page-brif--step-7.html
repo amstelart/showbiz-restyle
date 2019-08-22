@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html class="no-js  page" lang="ru">
+
+<head>
+  <meta charset="utf-8">
+  <title>SHOWBIZ</title>
+  <meta name="description" content="">
+  @@include('_include/page_head.html')
+</head>
+
+<body>
+
+  <div class="page__inner">
+
+    <div class="page__content">
+
+      @@include('blocks/page-header/page-header--white.html')
+
+      <main class="brif" role="main">
+        <div class="brif__inner">
+          <div class="brif__info">
+            <h3>Бриф на разработку сайта</h3>
+            <p>От того, насколько качественно вы заполните бриф зависит эффективность разрабатываемого проекта. После заполнения брифа, мы оценим ваш проект</p>
+            <form action="" class="brif__form">
+              <div class="brif__form-header">
+                <h3 class="step-title">Ваши контакты</h3>
+              </div>
+              <div class="brif__form-body">
+                <label class="brif-field-text">
+                  <span class="brif-field-text__name">Контактное лицо <span>*</span></span>
+                  <span class="brif-field-text__input-wrap">
+                    <input class="brif-field-text__input" type="text" id="" name="">
+                  </span>
+                </label>
+                <label class="brif-field-text">
+                  <span class="brif-field-text__name">Телефон <span>*</span></span>
+                  <span class="brif-field-text__input-wrap">
+                    <input class="brif-field-text__input phone-mask" type="text" id="" name="">
+                  </span>
+                </label>
+                <label class="brif-field-text">
+                  <span class="brif-field-text__name">Почта <span>*</span></span>
+                  <span class="brif-field-text__input-wrap">
+                    <input class="brif-field-text__input" type="text" id="" name="">
+                  </span>
+                </label>
+              </div>
+              <div class="brif__form-footer">
+                <div class="brif__action">
+                  <div class="brif__action-btn">
+                    <a href="#" class="btn btn--red"><span>отправить бриф на оценку</span></a>
+                  </div>
+                  <div class="brif__action-bottom">
+                    <a href="page-brif--step-6.html">Назад</a>
+                    <p><span>*</span> — обязательные поля</p>
+                  </div>
+                </div>
+              </div>
+            </form>
+          </div>
+        </div>
+      </main>
+
+    </div>
+
+    <div class="page__footer-wrapper">
+      @@include('blocks/page-footer/page-footer.html')
+    </div>
+
+  </div>
+
+  @@include('_include/page_bottom.html')
+</body>
+</html>

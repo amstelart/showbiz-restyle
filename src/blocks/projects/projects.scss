@@ -12,8 +12,8 @@
 
   &__col {
     @include col();
-    @include col(xl, 4);
-    @include col(lg, 6);
+    @include col(xl, 3);
+    @include col(lg, 4);
     @include col(md, 6);
     margin-bottom: 40px;
   }

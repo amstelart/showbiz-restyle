@@ -19,6 +19,7 @@
   &__card {
     @include col();
     @include col(lg, 4);
+    @include col(md, 6);
     @include col(sm, 12);
     margin-bottom: 40px;
 
@@ -28,7 +29,6 @@
   }
 
   &__card-inner {
-    text-align: center;
     display: block;
     text-decoration: none;
     margin: 3% 10%;
@@ -48,8 +48,8 @@
   }
 
   &__card-icon {
-    width: 55px;
-    height: 55px;
+    // width: 55px;
+    // height: 55px;
     margin-bottom: 17px;
 
     @media (max-width: ($screen-sm - 1)) {
@@ -59,7 +59,7 @@
 
   &__card-title {
 
-    font-size: 18px;
+    font-size: 20px;
     margin-bottom: 20px;
     font-weight: 700;
     color: $main-red;
@@ -67,10 +67,9 @@
 
   &__card-caption {
 
-    font-size: 16px;
-    line-height: 36px;
-    font-weight: 300;
-    color: #7e7e7e;
+    font-size: 12px;
+    font-weight: 400;
+    color: #8b9199;
 
     span {
       display: block;
