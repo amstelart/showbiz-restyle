@@ -1,0 +1,93 @@
+// В этом файле должны быть стили для БЭМ-блока brif-field-file, его элементов,
+// модификаторов, псевдоселекторов, псевдоэлементов, @media-условий...
+// Очередность: http://nicothin.github.io/idiomatic-pre-CSS/#priority
+
+.brif-field-file {
+
+  $block-name:                &; // #{$block-name}__element
+
+  display: block;
+  margin-bottom: 0.85em;
+
+  &__item {
+    border: 1px solid #000;
+    border-radius: 3px;
+    color: #000;
+    font-size: 16px;
+    font-weight: 400;
+    display: inline-block;
+    padding: 0.4em 3em 0.4em 1.5em;
+    margin-right: 15px;
+    margin-bottom: 15px;
+    position: relative;
+
+    .close {
+      background: transparent;
+      border: none;
+      border-left: 1px solid #000;
+      color: #000;
+      position: absolute;
+      top: 0;
+      height: 100%;
+      bottom: 0;
+      right: 0;
+
+      > span {
+
+        height: 1px;
+
+        &:before,
+        &:after {
+          background: #000;
+          height: 1px;
+        }
+      }
+    }
+  }
+
+  &__name {
+    font-size: 16px;
+    color: #000;
+    font-weight: 500;
+    margin-bottom: 8px;
+    display: block;
+    position: relative;
+  }
+
+  &__input-wrap {
+    position: relative;
+  }
+
+  &__input {
+    height: 0.1px;
+    width: 0.1px;
+    opacity: 0;
+    overflow: hidden;
+    position: absolute;
+    z-index: -1;
+  }
+
+  &__btn {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: #398cf3;
+    color: #fff;
+    font-size: 15px;
+    font-weight: 700;
+    padding: 0.7em 2em;
+    border-radius: 3px;
+    border: none;
+    max-width: 260px;
+    cursor: pointer;
+
+    .btn__icon {
+      fill: #fff;
+      margin-right: 10px;
+    }
+
+    &:hover {
+      background: darken(#398cf3, 6%);
+    }
+  }
+}

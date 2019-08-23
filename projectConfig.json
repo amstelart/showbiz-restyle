@@ -89,7 +89,8 @@
     "brif-field-text": [],
     "brif-field-checkbox": [],
     "field-radio-emoji": [],
-    "brif-field-radio": []
+    "brif-field-radio": [],
+    "brif-field-file": []
   },
   "addCssBefore": [
     "./src/scss/variables.scss",
