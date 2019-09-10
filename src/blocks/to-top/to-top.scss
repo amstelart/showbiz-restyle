@@ -7,21 +7,21 @@
   $block-name:                &; // #{$block-name}__element
 
   position: fixed;
-  right: 1rem;
+  left: 1rem;
   bottom: 1rem;
   z-index: 1;
-  width: 4rem;
-  height: 4rem;
+  width: 4.2rem;
+  height: 4.2rem;
   border-radius: 50%;
-  background-color: #000;
+  background-color: #292c33;
   color: transparent;
   font: 0/0 a;
   // см. img_to_bg/to-up.svg
   // http://yoksel.github.io/url-encoder/ru/
-  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 17 11' width='17' height='11'%3E%3Cpath fill='%23fff' d='M.202 1.97L1.956.204A.61.61 0 0 1 2.43 0a.61.61 0 0 1 .47.204L8.5 5.84 14.1.204A.61.61 0 0 1 14.57 0a.61.61 0 0 1 .474.204l1.754 1.766a.618.618 0 0 1 .202.473.62.62 0 0 1-.202.476l-7.826 7.875A.61.61 0 0 1 8.5 11a.61.61 0 0 1-.472-.204L.202 2.92A.618.618 0 0 1 0 2.444c0-.203.067-.34.202-.475z'/%3E%3C/svg%3E");
+  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' xmlns:xlink='http://www.w3.org/1999/xlink' width='18px' height='21px'%3E%3Cpath fill-rule='evenodd' fill='rgb(255, 255, 255)' d='M0.254,8.154 C-0.107,8.495 -0.107,9.062 0.254,9.415 C0.602,9.756 1.183,9.756 1.530,9.415 L8.069,3.022 L8.069,20.117 C8.070,20.609 8.469,21.000 8.972,21.000 C9.475,21.000 9.888,20.609 9.888,20.117 L9.888,3.022 L16.415,9.415 C16.775,9.756 17.356,9.756 17.704,9.415 C18.065,9.062 18.065,8.494 17.704,8.154 L9.618,0.248 C9.269,-0.105 8.689,-0.105 8.341,0.248 L0.254,8.154 Z'/%3E%3C/svg%3E");
   background-repeat: no-repeat;
   background-position: center;
-  transform: rotate(180deg);
+  // transform: rotate(180deg);
 
   .js & {
     display: none;

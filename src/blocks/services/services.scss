@@ -8,8 +8,13 @@
 
   &__flex {
     @include row;
-    padding-left: 40px;
-    padding-right: 40px;
+
+    @media (min-width: $screen-xxl) {
+      max-width: 1432px;
+      margin: auto;
+      padding-left: 40px;
+      padding-right: 40px;
+    }
 
     @media (max-width: ($screen-sm - 1)) {
       padding: 0;
@@ -36,14 +41,6 @@
 
     @media (max-width: ($screen-sm - 1)) {
       margin: 0;
-    }
-
-    &:hover,
-    &:focus {
-
-      #{$block-name}__card-caption {
-        color: #000;
-      }
     }
   }
 

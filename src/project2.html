@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html class="no-js  page page-project" lang="ru">
+
+<head>
+  <meta charset="utf-8">
+  <title>SHOWBIZ</title>
+  <meta name="description" content="">
+  @@include('_include/page_head.html')
+</head>
+
+<body>
+
+  <div class="page__inner">
+
+    <div class="page__content">
+
+      <header class="page-header page-header--sticky" role="banner">
+
+        <div class="page-header__inner">
+
+          <div class="page-header__flex">
+            <a href="index.html" class="logo">
+              <img src="img/logo--white.svg" width="175px" height="45px" alt="logo">
+            </a>
+            <button id="main-nav-toggler" class="main-nav__toggler  burger"><span></span></button>
+            <nav id="main-nav" class="main-nav" role="navigation">
+              <ul class="main-nav__list">
+                <li class="main-nav__item  main-nav__item--active">
+                  <a href="page-text.html" class="main-nav__link">
+                    Портфолио
+                  </a>
+                </li>
+                <li class="main-nav__item">
+                  <a href="page-text.html" class="main-nav__link">
+                    Разработка сайтов
+                  </a>
+                </li>
+                <li class="main-nav__item">
+                  <a href="page-text.html" class="main-nav__link">
+                    Продвижение
+                  </a>
+                </li>
+                <li class="main-nav__item">
+                  <a href="page-text.html" class="main-nav__link">
+                    Поддержка
+                  </a>
+                </li>
+                <li class="main-nav__item">
+                  <a href="page-text.html" class="main-nav__link">
+                    Партнерам
+                  </a>
+                </li>
+                <li class="main-nav__item">
+                  <a href="#to-bottom" class="main-nav__link js-scroll-to">
+                    Контакты
+                  </a>
+                </li>
+              </ul>
+              <ul class="main-nav__contacts">
+                <li><a href="tel:+78002502102">8 800 250 21 02</a></li>
+                <li><a href="mailto:work@2showbiz.ru">work@2showbiz.ru</a></li>
+              </ul>
+            </nav>
+          </div>
+        </div>
+      </header>
+
+      <div class="page-project__header" style="background-image: url('../img/project2-header.jpg');">
+        <div class="project-container">
+          <div class="project-pager">
+            <div class="project-pager__item back">
+              <a href="#">
+                <svg width="26" height="19"><use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="img/sprite-svg.svg#btn-arrow"></use></svg>
+                <span>На главную страницу</span>
+              </a>
+            </div>
+            <div class="project-pager__item title">Magnum</div>
+            <div class="project-pager__item link"><a href="#">magnum.parts</a></div>
+          </div>
+        </div>
+      </div>
+
+      <main class="page-project__case" role="main">
+        <section class="page-project__part">
+          <div class="project-container">
+            <img class="project-img" src="img/Project2.jpg" alt="">
+          </div>
+        </section>
+      </main>
+      <div class="page-project__pagination">
+        <a href="#" class="pagination-item pagination-prev" style="background-image: url('../img/pagination-item-img.jpg');">
+          <div class="pagination-caption">
+            <div class="title">Предыдущий проект</div>
+            <div class="name">Magnum</div>
+          </div>
+        </a>
+        <a href="#" class="pagination-item pagination-next" style="background-image: url('../img/pagination-item-img.jpg');">
+          <div class="pagination-caption">
+            <div class="title">Следующий проект</div>
+            <div class="name">Green Park</div>
+          </div>
+        </a>
+      </div>
+    </div>
+
+    <div class="page__footer-wrapper">
+      @@include('blocks/page-footer/page-footer.html')
+    </div>
+
+  </div>
+
+  @@include('_include/page_bottom.html')
+</body>
+</html>

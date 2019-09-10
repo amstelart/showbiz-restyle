@@ -12,10 +12,9 @@
 
   &__col {
     @include col();
-    @include col(xl, 3);
-    @include col(lg, 4);
-    @include col(md, 6);
+    @include col(xl, 3, $grid-columns, 20px);
+    @include col(lg, 4, $grid-columns, 20px);
+    @include col(md, 6, $grid-columns, 20px);
     margin-bottom: 40px;
   }
-
 }

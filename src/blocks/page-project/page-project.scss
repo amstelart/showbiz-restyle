@@ -1,0 +1,188 @@
+// В этом файле должны быть стили для БЭМ-блока page-project, его элементов,
+// модификаторов, псевдоселекторов, псевдоэлементов, @media-условий...
+// Очередность: http://nicothin.github.io/idiomatic-pre-CSS/#priority
+
+.project-container {
+  width: 100%;
+  max-width: 1402px;
+  margin: auto;
+}
+
+.project-img {
+  display: block;
+}
+
+.page-project {
+
+  $block-name:                &; // #{$block-name}__element
+
+  .page-header {
+    border-bottom: 1px solid #444444;
+    background-color: transparent;
+    z-index: 10;
+    padding: 20px 0;
+  }
+
+  &__header {
+    height: 240px;
+    background-color: #000;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    position: relative;
+    padding-right: 15px;
+    padding-left: 15px;
+
+    &:before {
+      content: "";
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      background-color: rgba(0, 0, 0, 0.8);
+    }
+
+    .project-container {
+      height: 100%;
+    }
+  }
+
+  .project-pager {
+    position: relative;
+    z-index: 2;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding-top: 97px;
+    height: 100%;
+
+    &__item {
+
+      font-size: 16px;
+      width: 240px;
+
+      &.back {
+        a {
+          color: #fff;
+          text-decoration: none;
+          opacity: 0.8;
+          position: relative;
+          padding-left: 34px;
+
+          &:hover {
+            opacity: 1;
+          }
+
+          svg {
+            transform: rotate(180deg);
+            fill: #fff;
+            vertical-align: middle;
+            position: absolute;
+            top: 0;
+            left: 0;
+          }
+
+          span {
+            @media (max-width: ($screen-md - 1)) {
+              display: none;
+            }
+          }
+        }
+      }
+
+      &.title {
+        color: #fff;
+        font-size: 30px;
+        font-weight: 700;
+        margin: auto;
+        max-width: auto;
+        text-align: center;
+      }
+
+      &.link {
+        text-align: right;
+      }
+    }
+  }
+
+
+  &__pagination {
+
+    @include row($grid-gutter-width, 0px, 0px, 0px, 0px, 0px);
+
+    .pagination-item {
+      @include col();
+      @include col(sm, 6, $grid-columns, 0px);
+    }
+
+    .pagination-prev,
+    .pagination-next {
+      display: flex;
+      padding: 4.5vw 5.5vw !important;
+      background-size: cover;
+      background-repeat: no-repeat;
+      color: #fff;
+      position: relative;
+      text-decoration: none;
+
+      &:before {
+        content: "";
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background: rgba(0, 0, 0, 0.7);
+      }
+
+      &:hover {
+        &:before {
+          background: rgba(233, 55, 73, 0.8);
+        }
+
+        .pagination-caption {
+          .name {
+            opacity: 1;
+          }
+        }
+      }
+    }
+
+    .pagination-prev {
+      justify-content: flex-end;
+    }
+
+    .pagination-next {
+      justify-content: flex-start;
+      text-align: right;
+    }
+
+    .pagination-caption {
+      position: relative;
+      z-index: 2;
+
+      .title {
+        font-size: 30px;
+        font-weight: 900;
+        color: #fff;
+        line-height: 1.4;
+
+        @media (max-width: ($screen-lg - 1)) {
+          font-size: 18px;
+        }
+      }
+      .name {
+        font-size: 24px;
+        font-weight: 700;
+        color: #fff;
+        opacity: 0.6;
+        line-height: 1.3;
+
+        @media (max-width: ($screen-lg - 1)) {
+          font-size: 16px;
+        }
+      }
+    }
+  }
+}
