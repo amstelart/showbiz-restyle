@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html class="no-js  page" lang="ru">
+<html class="no-js  page page-project" lang="ru">
 
 <head>
   <meta charset="utf-8">
@@ -49,18 +49,16 @@
 
     <div class="page__content">
 
-      <header class="page-header page-header--white" role="banner">
+      <header class="page-header page-header--sticky" role="banner">
 
         <div class="page-header__inner">
 
           <div class="page-header__flex">
             <a href="index.html" class="logo">
-              <img src="img/logo--black.svg" width="175px" height="45px" alt="logo">
+              <img src="img/logo--white.svg" width="175px" height="45px" alt="logo">
             </a>
-
             <button id="main-nav-toggler" class="main-nav__toggler  burger"><span></span></button>
-
-            <nav id="main-nav" class="main-nav main-nav--dark" role="navigation">
+            <nav id="main-nav" class="main-nav" role="navigation">
               <ul class="main-nav__list">
                 <li class="main-nav__item  main-nav__item--active">
                   <a href="page-text.html" class="main-nav__link">
@@ -93,101 +91,51 @@
                   </a>
                 </li>
               </ul>
+              <ul class="main-nav__contacts">
+                <li><a href="tel:+78002502102">8 800 250 21 02</a></li>
+                <li><a href="mailto:work@2showbiz.ru">work@2showbiz.ru</a></li>
+              </ul>
             </nav>
           </div>
-
-
         </div>
-
-
       </header>
 
-
-      <main class="brif" role="main">
-        <div class="brif__inner">
-          <div class="brif__info">
-            <h3>Бриф на разработку сайта</h3>
-            <p>От того, насколько качественно вы заполните бриф зависит эффективность разрабатываемого проекта. После заполнения брифа, мы оценим ваш проект</p>
-            <form action="" class="brif__form">
-              <div class="brif__form-header">
-                <h3 class="step-title">Особенности работы компании</h3> <span class="step-count">Шаг 4 из 6</span>
-              </div>
-              <div class="brif__form-body">
-                <label class="brif-field-text">
-                  <span class="brif-field-text__name">Какие убеждающие цифры мы можем использовать.</span>
-                  <span class="brif-field-text__input-wrap">
-                    <textarea class="brif-field-text__input" placeholder="Пример: Ежемесячная экономии на отопление 2000 руб. для дома 200 м²" rows="5"></textarea>
-                  </span>
-                </label>
-                <div class="brif-field-radio">
-                  <div class="brif-field-radio__title">Стоит ли публиковать какие-то лицензии, сертификаты?</div>
-                  <div class="brif-field-radio__input-wrap">
-                    <label class="brif-field-radio__name">
-                      <input class="brif-field-radio__input" type="radio" id="" name="demo-radio" checked>
-                      <span class="brif-field-radio__name-text">Да</span>
-                    </label>
-                  </div>
-                  <div class="brif-field-radio__input-wrap">
-                    <label class="brif-field-radio__name">
-                      <input class="brif-field-radio__input" type="radio" id="" name="demo-radio" checked>
-                      <span class="brif-field-radio__name-text">Нет</span>
-                    </label>
-                  </div>
-                </div>
-                <div class="brif-field-radio">
-                  <div class="brif-field-radio__title">Есть ли возможность получить 2-3 отзыва?</div>
-                  <div class="brif-field-radio__input-wrap">
-                    <label class="brif-field-radio__name">
-                      <input class="brif-field-radio__input" type="radio" id="" name="demo-radio" checked>
-                      <span class="brif-field-radio__name-text">Да</span>
-                    </label>
-                  </div>
-                  <div class="brif-field-radio__input-wrap">
-                    <label class="brif-field-radio__name">
-                      <input class="brif-field-radio__input" type="radio" id="" name="demo-radio" checked>
-                      <span class="brif-field-radio__name-text">Нет</span>
-                    </label>
-                  </div>
-                </div>
-                <label class="brif-field-text">
-                  <span class="brif-field-text__name">Опишите поэтапную схему работы с клиентом</span>
-                  <span class="brif-field-text__input-wrap">
-                    <textarea class="brif-field-text__input" placeholder="Пример: Шаг 1 — получение заявки, Шаг 2 — выезд на объект и т.д." rows="5"></textarea>
-                  </span>
-                </label>
-                <label class="brif-field-text">
-                  <span class="brif-field-text__name">Есть ли какое-то послепродажное сопровождение клиента? Обучение, консультации?</span>
-                  <span class="brif-field-text__input-wrap">
-                    <textarea class="brif-field-text__input" rows="5"></textarea>
-                  </span>
-                </label>
-                <label class="brif-field-text">
-                  <span class="brif-field-text__name">Есть ли уникальное торговое предложение целевому клиенту?</span>
-                  <span class="brif-field-text__input-wrap">
-                    <textarea class="brif-field-text__input" rows="5"></textarea>
-                  </span>
-                </label>
-                <label class="brif-field-text">
-                  <span class="brif-field-text__name">О каких деталях важно упомянуть?</span>
-                  <span class="brif-field-text__input-wrap">
-                    <textarea class="brif-field-text__input" rows="5"></textarea>
-                  </span>
-                </label>
-              </div>
-              <div class="brif__form-footer">
-                <a href="page-brif--step-3.html" class="btn btn--white"><span>Назад</span></a>
-                <a href="page-brif--step-5.html" class="btn btn--red btn-icon">
-                  <span>Далее</span>
-                  <svg class="btn__icon">
-                    <use xlink:href="img/sprite-svg.svg#btn-arrow"></use>
-                  </svg>
-                </a>
-              </div>
-            </form>
+      <div class="page-project__header" style="background-image: url('../img/project2-header.jpg');">
+        <div class="project-container">
+          <div class="project-pager">
+            <div class="project-pager__item back">
+              <a href="#">
+                <svg width="26" height="19"><use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="img/sprite-svg.svg#btn-arrow"></use></svg>
+                <span>На главную страницу</span>
+              </a>
+            </div>
+            <div class="project-pager__item title">Magnum</div>
+            <div class="project-pager__item link"><a href="#">magnum.parts</a></div>
           </div>
         </div>
-      </main>
+      </div>
 
+      <main class="page-project__case" role="main">
+        <section class="page-project__part">
+          <div class="project-container">
+            <img class="project-img" src="img/Project2.jpg" alt="">
+          </div>
+        </section>
+      </main>
+      <div class="page-project__pagination">
+        <a href="#" class="pagination-item pagination-prev" style="background-image: url('../img/pagination-item-img.jpg');">
+          <div class="pagination-caption">
+            <div class="title">Предыдущий проект</div>
+            <div class="name">Magnum</div>
+          </div>
+        </a>
+        <a href="#" class="pagination-item pagination-next" style="background-image: url('../img/pagination-item-img.jpg');">
+          <div class="pagination-caption">
+            <div class="title">Следующий проект</div>
+            <div class="name">Green Park</div>
+          </div>
+        </a>
+      </div>
     </div>
 
     <div class="page__footer-wrapper">
